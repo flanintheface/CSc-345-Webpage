@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSc 345 - Spring 2020</title>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="icon" href="unknown.png" type="image/png">
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="container">
+  <header id="class-header">
+    <h3>CSc 345 - Analysis of Discrete Structures</h3>
+    <h3>Spring 2020</h3>
+  </header>
+
+  <div id="staff-info">
+    <h5 id="staff-header">Instructor and Teaching Assistants</h5>
+    <br />
+    <div class="row">
+      <div class="col">
+        <div class="staff">
+          <p class="name">Alon Efrat</p>
+          <a href="mailto:alon@cs.arizona.edu">alon@cs.arizona.edu</a>
+          <p>Office Hours: Mon 2-3 Wed 3-4 or by appointment</p>
+          <p>Zoom: <a href=""></a></p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="staff">
+          <p class="name">Steven Eisenlen</p>
+          <a href="mailto:seiselen24@email.arizona.edu">seiselen24@email.arizona.edu</a>
+          <p>Office Hours: Fridays from 12:00pm-3:30pm</p>
+          <p>Zoom: <a href="https://zoom.us/j/342837939">https://zoom.us/j/342837939</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="staff">
+          <p class="name">Prithula Hridi</p>
+          <a href="mailto:seiselen24@email.arizona.edu">hridi@email.arizona.edu</a>
+          <p>Office Hours: Mon/Fri 2:00pm-3:00pm</p>
+          <p>Zoom: <a href="https://arizona.zoom.us/j/971654408">https://arizona.zoom.us/j/971654408</a></p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="staff">
+          <p class="name">Henry Nguyen</p>
+          <a href="mailto:seiselen24@email.arizona.edu">henryn098@email.arizona.edu</a>
+          <p>Office Hours: Mon/Wed 11:00am-1:50pm</p>
+          <p>Zoom: <a href="https://arizona.zoom.us/j/619705143">https://arizona.zoom.us/j/619705143</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <table class="table table-bordered">
+    <thead class="thead-light">
+      <tr>
+        <th>Hw 1</th>
+        <th>Hw 2</th>
+        <th>Hw 3a</th>
+        <th>Hw 3b</th>
+        <th>Project 1 (Line Sweep)</th>
+        <th>Project 2 (Quad Tree)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Due <s>2/10</s> 2/20</td>
+        <td>Due 2/22</td>
+        <td>Due 4/7</td>
+        <td>TBA</td>
+        <td>Due 3/23</td>
+        <td>Due 4/21</td>
+      </tr>
+      <tr>
+        <td><a class="link" href="https://www2.cs.arizona.edu/classes/cs345/spring2020/cs345_spring2020_hw1.pdf">Specification</a></td>
+        <td><a class="link" href="https://www.dropbox.com/s/4a27csnzx1sas6h/csc345_spring2020_hw2.pdf?dl=0">Specification</a></td>
+        <td><a class="link" href="https://www2.cs.arizona.edu/classes/cs345/spring2020/CSc345_Spring2020_hw_3_1.pdf">Specification</a></td>
+        <td><a class="link" href="">Specification</a></td>
+        <td><a class="link" href="https://www.dropbox.com/s/csu5wsr5rtxhldd/cs345_spring2020_proj1.pdf?dl=0">Specification</a></td>
+        <td><a class="link" href="https://www2.cs.arizona.edu/classes/cs345/spring2020/CSc345_Spring2020_proj2.pdf">Specification</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <section>
+    <h4>Course Description</h4>
+    <p>
+      The emphasis of this course is on data structures and efficient implementations of algorithms that use them.
+      In the process of learning and practicing methods of data structures 
+      and algorithm design, we will see many examples of important algorithms.
+    </p>
+    <p>
+      Some of the data structures we will study are stacks, queues, trees, tries, and heaps.
+      Algorithms considered will include sorting, searching, and hashing. 
+      We will also learn about graphs, graph algorithms, asymptotic notation, and algorithm analysis.
+    </p>
+  </section>
+
+  <section>
+    <h4>Syllabus</h4>
+    <p>The course is organized into five parts. After each topic below are the relevant chapter numbers from the text.
+      Note that not all material covered in class will be in the textbook (e.g. Skip Lists).
+      The syllabus below is only an outline and is very likely to change.
+    </p>
+    <ol type="I" id="course-topics">
+      <li>
+        <h5>Introduction</h5>
+        <ul>
+          <li>Definitions of trees, heights, and number of nodes</li>
+          <li>Algorithms (1, 2): notion of algorithm, measuring time and space</li>
+          <li>Analysis (3, 4): asymptotics, sums, recurrences</li>
+        </ul>
+        <ul>
+          <li><a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/intro.pdf">slides</a></li>
+          <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7387fa67-553f-4055-bad6-ab3f006be793">video 1</a></li>
+          <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=c7189e07-f7c3-4f1f-a453-aa610178e896">video 2</a></li>
+          <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=c7189e07-f7c3-4f1f-a453-aa610178e896">video 3</a></li>
+          <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=2a672258-4f99-4c80-9512-bfcf10af5290">video 4 (overlapping video 3)</a></li>
+        </ul>
+      </li>
+      <li>
+        <h5>Sorting</h5>
+        <ol>
+          <li>Sorting with Divide and Conquer
+            <ol type="a">
+              <li><a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/MS.pdf" class="topic-slides">Merge Sort</a>
+                <ul>
+                  <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=d4737ef8-b0a2-461e-a1ba-aa610178ea64">Intro and Analysis</a></li>
+                </ul>
+              </li>
+              <li><a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/QS.pdf" class="topic-slides">Quick Sort and Median Selection:</a>
+                <ul>
+                  <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=344db8e5-e639-4035-9916-ab3f006beb31">video</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/heapsort.pdf" class="topic-slides">Heap Sort</a>
+                <ul>
+                  <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=81092ad6-a9b1-46ad-99f4-aa610178ed2a">video</a></li>
+                  <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=0dd7dfd2-9ebd-464c-9bf8-aa610178ec2f">Heap Operations</a></li>
+                </ul>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/InsertionSort.pdf" class="topic-slides">Insertion Sort</a>
+          </li>
+          <li>
+            <a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/Radix.pdf" class="topic-slides">Counting Sort and Radix Sort (CLRS 8)</a>
+            <ul>
+              <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=bf7890d1-0360-4672-9b32-ab3f006bebd5">Part 1</a></li>
+              <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0b353b5c-3be7-407c-aa0e-ab3f006bec5d">Part 2</a></li>
+            </ul>
+          </li>
+        </ol>
+        <li>
+          <h5>Hierarchical Data Structures</h5>
+          <ol>
+            <li><a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/SLshort.pdf" class="topic-slides">Skip Lists</a>
+              <ul>
+                <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=de8ce234-14fb-4ec7-8c57-ab3f006c0079">Intro</a></li>
+              </ul>
+              <br />
+              <a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/LS.pdf" class="topic-slides">Sweep Line Algorithm (CLRS 33.2)</a>
+              <ul>
+                <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=1ca4c841-7bd0-4291-a5e0-aa6f01779519">Part 1</a></li>
+                <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0be2331e-f3fc-40dd-8c8c-ab3f006bf094">Part 2</a></li>
+                <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0be2331e-f3fc-40dd-8c8c-ab3f006bf094">Part 3</a></li>
+              </ul>
+            </li>
+            <li>
+              Search Trees
+              <ol type="a">
+                <li>Basic operations: search, insertion, deletion, predecessor, and successor worst-case efficiency through height balancing. 
+                  Note how we delete a key which is not a leaf.
+                  <a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4bb36dcf-efe1-475f-b85d-ab8301425dfd">video1</a>
+                  <a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b5c9564f-1cc2-4f5a-a8b5-ab8301482ec9">video2</a>
+                </li>
+                <li>Introduction to the next topic (AVL)</li>
+                <li><a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/avl.pdf" class="topic-slides">AVL trees</a>
+                  <ul>
+                    <li><a href="https://arizona.zoom.us/rec/play/tJIvduCopm03HNeU4wSDCvJ8W42_L6us1Scd_vANnhq9V3cLMwKnb7FAarfA5lCq6VWOpkH8I78jItbG?continueMode=true&_x_zm_rtaid=7_wd83-oTL6feElohCMn-Q.1585613034711.b35ee3e59a80eda0e1725f9f68ae7847&_x_zm_rhtaid=475">Intro to AVL Trees</a></li>
+                    <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=01196371-fdd4-476d-b0a4-ab3f006bf51c">Rotations in an AVL Tree</a></li>
+                    <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fe41b6b7-3de2-4d69-bf92-ab3f006bf59b">Intro and Insertion</a></li>
+                    <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=84af27ed-f96a-47ed-a79c-ab3f006bf672">Rotations, Deletions and Intro to B-Trees and 2-3 Trees</a></li>
+                  </ul>
+                <li><a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/QTshort.pdf" class="topic-slides">Quad Trees:</a>
+                  <ul>
+                    <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8cd0a192-7a18-43cf-8dee-ab3f006bf340">(old) video part 1</a></li>
+                  </ul>
+                </li>
+                <li>B-trees and 2-3 trees. Definitions, insertions and deletions. <a href="">video1</a> (start at 40:00) , <a href=""></a>video2  <a href="">video3</a> 2-3 trees (a,b)-trees, B-trees and B+ trees</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/hashing_short.pdf" class="topic-slides"><h5>Hashing and Hash Tables</h5></a>
+          <ul>
+            <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=5de5d744-ae65-4401-91ba-a91b015211a7">Basics</a></li>
+            <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=aa1a2b20-a10d-4d95-8b3e-a91b015435db">Open Addressing</a></li>
+          </ul>
+        </li>
+        <li>
+          <h5>Graphs</h5>
+          <ol>
+            <li>Representation (CLRS 22): basic concepts, adjacency matrix, adjacency list.
+                Searching (CLRS 22): depth-first search
+            </li>
+            <li>
+              <a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/prim2.pdf" class="topic-slides">Prim's Algorithm for Finding a Minimum Spanning Tree (CLRS 23)</a> 
+            </li>
+            <li>
+              <a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/topological_order.pdf" class="topic-slides">Kahn's Algorithm for Topological Sorting</a>
+              <ul>
+                <li><a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=8380b25e-298b-4909-9fe5-a93000479b0e">Finding Topological Order in a Graph</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/kd-tree.pdf" class="topic-slides">Huffman codes (if time permits) (CLRS 16.3)</a>
+              <a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=51e1d5eb-0553-4cbe-9570-aa97002c4b6e">video 1</a>
+              <a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=544c0917-6dff-496d-ac52-aa97002c4c0c">video 2</a>
+            </li>
+            <li>
+              <a href="https://www2.cs.arizona.edu/classes/cs345/spring2020/trie.pdf" class="topic-slides">Tries and Suffix Trees</a>
+              <a href="https://arizona.hosted.panopto.com/Panopto/Pages/Auth/Access.aspx?delivery=befd30ee-6154-4bd0-85f2-aa98014945c9">video</a>
+            </li>
+          </ol>
+        </li>
+    </ol>
+  </section>
+  
+  <section>
+    <h4>Course Prerequisites or Co-Requisites</h4>
+    <p>One of the following is required, with a grade C or better: CSC 245, MATH 243, or MATH 323.
+      <br />
+      Also, one of the following is required, with a grade C or better: CSC 127B or CSC 227.
+    </p>
+  </section>
+
+  <section>
+    <h4>Course Objectives and Expected Learning Outcomes</h4>
+    <ul>
+      <li>Gain the tools to identify, or to cleverly guesstimate, which of the common paradigms used in Algorithms might best fit a problem that the student might face in industry or the academy.</li>
+      <li>Be able to articulate clearly the algorithmic solutions (e.g. using pseudo-code), and to provide guarantees for the correctness and asymptotic efficiency of the proposed solutions.</li>
+      <li>Demonstrate techniques for algorithmic incorporation of randomness into data, and will understand where such techniques are beneficial.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h4>Absence and Class Participation Policy</h4>
+    <p>Students are expected to attend class. It is the student's responsibility to be aware of material discussed in class in case of absence. Use of laptops and similar devices is allowed, but only to the level that your attention is focused on the discussion in class.The UA’s policy concerning Class Attendance, Participation, and Administrative Drops is available at <a href="https://catalog.arizona.edu/policy/class-attendance-participation-and-administrative-drop">https://catalog.arizona.edu/policy/class-attendance-participation-and-administrative-drop</a> </p>
+    <p>The UA policy regarding absences for any sincerely held religious belief, observance or practice will be accommodated where reasonable: <a href="https://policy.arizona.edu/human-resources/religious-accommodation-policy">https://policy.arizona.edu/human-resources/religious-accommodation-policy</a>.</p>
+    <p>Absences pre-approved by the UA Dean of Students (or dean’s designee) will be honored. See <a href="http://uhap.web.arizona.edu/policy/appointed-personnel/7.04.02">http://uhap.web.arizona.edu/policy/appointed-personnel/7.04.02</a></p>
+  </section>
+
+  <section>
+    <h4>Required Texts or Readings</h4>
+    <p>Thomas H. Cormen, Charles E. Leiserson, Ron L. Rivest, and Clifford Stein, <a href="https://www.amazon.com/Introduction-Algorithms-Thomas-H-Cormen/dp/0262033844/ref=sr_1_sc_1?ie=UTF8&qid=1326054524&sr=8-1-spell">Introduction to Algorithms</a>, McGraw-Hill, Boston.</p>
+  </section>
+
+  <section>
+    <h4>Optional Texts</h4>
+    <ul>
+      <li>Jon Kleinberg and Eva Tardos, <a href="https://www.amazon.com/Algorithm-Design-Jon-Kleinberg/dp/0321295358">Algorithm Design</a>,  Addison Wesley 2006</li>
+      <li>Sanjoy Dasgupta, Christos Papadimitriou, and Umesh Vazirani, <a href="https://www.amazon.com/Algorithms-Sanjoy-Dasgupta/dp/0073523402">Algorithms</a></li>
+      <li>Harry R. Lewis, Larry Denenberg, <a href="https://www.amazon.com/Structures-Their-Algorithms-Harry-Denenberg/dp/B000L5AZGS/ref=sr_1_3?keywords=Data+Structures+and+Their+Algorithms&qid=1585435540&sr=8-3">Data Structures and Their Algorithms</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h4>Assignments and Examinations: Schedule/Due Dates</h4>
+    <p>
+      Homework: There are six homeworks, which occur roughly each week.
+      At least two of the homeworks involved programming.
+      The grade of the lowest <strong>theoretical</strong> homework score will be dropped from calculation of the final grade.
+    </p>
+
+    <table class="table table-bordered">
+      <thead class="thead-light">
+        <tr>
+          <th>Exam</th>
+          <th>Day</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Midterm</strong></td>
+          <td>Thursday, March 5th</td>
+          <td>12:30pm-1:45pm (i.e. during class)</td>
+        </tr>
+        <tr>
+          <td><strong>Final</strong></td>
+          <td>Wednesday, May 13th</td>
+          <td>1:00pm-3:00pm</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h4>Grading Scale and Policies</h4>
+
+    <p>The course numeric_final_grade is computed based on the the formula:</p>
+    <div class="col-md-5" style="background: #e9ecef; padding: 1em">
+      <p><strong>46%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Homework grade</strong></p>
+      <p><strong>21%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Midterm exam grade</strong></p>
+      <p><strong>21%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Final exam grade</strong></p>
+      <p><strong>12%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Max{Midterm_exam_grade, Final_exam}</strong></p>
+    </div>
+
+    <br />
+
+    <p>Grade distribution for this course:</p>
+    <div class="col-md-4" style="background: #e9ecef; padding: 1em">
+      <p><strong>A: </strong>&ge; 90%</p>
+      <p><strong>B: </strong>&ge; 80%</p>
+      <p><strong>C: </strong>&ge; 70%</p>
+      <p><strong>D: </strong>&ge; 60%</p>
+      <p><strong>E: </strong>&ge; 50%</p>
+    </div>
+  </section>
+
+  <section>
+    <h4>Homeworks Ethics and Instructions</h4>
+    <p>
+      On homework, you are expected to think about and try to solve the problem for yourself.
+      You may discuss general ideas with friends, but your solutions must be written up separately and represent individual work, and if ideas were developed during a collaborative discussion, list clearly with whom you brainstormed ideas.
+      Use of solutions from previous offerings of the course (at UofA or any other university) is not permitted.
+      Five points will be deducted per day for lateness, and late homework cannot be turned in after solutions have been discussed in class.
+    </p>
+    <p>
+      Use D2L to submit your homework.
+      They should be .pdf files.
+      You could use LaTeX, Word, Google Doc, etc, or you could write using your handwriting, scan and submit.
+      It is your responsibility to verify that homework is legible. Please do not submit paper solutions.
+      Neatness, and especially conciseness, is required to earn the highest marks.
+      If you cannot solve a problem, state this in your write-up, and write down only what you know to be correct; rambling at length about ideas that don't quite work may cause additional points to be deducted.
+    </p>
+  </section>
+
+  <section>
+    <h4>Classroom Behavior Policy</h4>
+    <p>
+      To foster a positive learning environment, students and instructors have a shared responsibility.
+      We want a safe, welcoming, and inclusive environment where all of us feel comfortable with each other and where we can challenge ourselves to succeed.
+      To that end, our focus is on the tasks at hand and not on extraneous activities (e.g., texting, chatting, reading a newspaper, making phone calls, web surfing, etc.)
+    </p>
+    <p>
+        Inclusive Excellence is a fundamental part of the University of Arizona’s strategic plan and culture.
+        As part of this initiative, the institution embraces and practices diversity and inclusiveness.
+        These values are expected, respected and welcomed in this course.
+    </p>
+    <h5>Elective Name and Pronoun Usage</h5>
+    <p>
+      This course supports elective gender pronoun use and self-identification; rosters indicating such choices will be updated throughout the semester, upon student request.
+      As the course includes group work and in-class discussion, it is vitally important for us to create an educational environment of inclusion and mutual respect.
+    </p>
+  </section>
+
+  <section>
+    <h4>Threatening Behavior Policy</h4>
+    <p>
+      The UA Threatening Behavior by Students Policy prohibits threats of physical harm to any member of the University community, including to oneself.
+      <br />
+      See <a href="http://policy.arizona.edu/education-and-student-affairs/threatening-behavior-students">http://policy.arizona.edu/education-and-student-affairs/threatening-behavior-students</a>.
+    </p>
+  </section>
+
+  <section>
+    <h4>Accessibility and Accommodations</h4>
+    <p>
+      Our goal in this classroom is that learning experiences be as accessible as possible.
+      If you anticipate or experience physical or academic barriers based on disability, please let me know immediately so that we can discuss options.
+      You are also welcome to contact the Disability Resource Center (520-621-3268) to establish reasonable accommodations.
+      For additional information on the Disability Resource Center and reasonable accommodations, please visit <a href="http://drc.arizona.edu">http://drc.arizona.edu</a>.
+    </p>
+    <p>
+      If you have reasonable accommodations, please plan to meet with me by appointment or during office hours to discuss accommodations and how my course requirements and activities may impact your ability to fully participate.
+      Please be aware that the accessible table and chairs in this room should remain available for students who find that standard classroom seating is not usable.
+    </p>
+  </section>
+
+  <section>
+    <h4>Code of Academic Integrity</h4>
+    <p>Students are encouraged to share intellectual views and discuss freely the principles and applications of course materials.
+      However, graded work/exercises must be the product of independent effort unless otherwise instructed.
+      Students are expected to adhere to the UA Code of Academic Integrity as described in the UA General Catalog.
+      See <a href="http://deanofstudents.arizona.edu/academic-integrity/students/academic-integrity">http://deanofstudents.arizona.edu/academic-integrity/students/academic-integrity</a>.
+    </p>
+    <p>
+      Selling class notes and/or other course materials to other students or to a third party for resale is not permitted without the instructor’s express written consent.
+      Violations to this and other course rules are subject to the Code of Academic Integrity and may result in course sanctions.
+      Additionally, students who use D2L or UA e-mail to sell or buy these copyrighted materials are subject to Code of Conduct Violations for misuse of student e-mail addresses.
+      This conduct may also constitute copyright infringement.
+    </p>
+  </section>
+
+  <section>
+    <h4>UA Nondiscrimination and Anti-harassment Policy</h4>
+    <p>
+      The University is committed to creating and maintaining an environment free of discrimination; see <a href="http://policy.arizona.edu/human-resources/nondiscrimination-and-anti-harassment-policy">http://policy.arizona.edu/human-resources/nondiscrimination-and-anti-harassment-policy</a>.
+      Our classroom is a place where everyone is encouraged to express well-formed opinions and their reasons for those opinions.
+      We also want to create a tolerant and open environment where such opinions can be expressed without resorting to bullying or discrimination of others.
+    </p>
+  </section>
+
+  <section>
+    <h4>Additional Resources for Students</h4>
+    <p>UA Academic policies and procedures are available at <a href="http://catalog.arizona.edu/2015-16/policies/aaindex.html">http://catalog.arizona.edu/2015-16/policies/aaindex.html</a></p>
+    <p>Student Assistance and Advocacy information is available at <a href="http://deanofstudents.arizona.edu/student-assistance/students/student-assistance">http://deanofstudents.arizona.edu/student-assistance/students/student-assistance</a></p>
+  </section>
+
+  <section>
+    <h4>Confidentiality of Student Records</h4>
+    <a href="https://www.registrar.arizona.edu/personal-information/family-educational-rights-and-privacy-act-1974-ferpa">
+      https://www.registrar.arizona.edu/personal-information/family-educational-rights-and-privacy-act-1974-ferpa
+    </a>
+  </section>
+
+  <section>
+    <h4>Subject to Change Statement</h4>
+    <p>Information contained in the course syllabus, other than the grade and absence policy, may be subject to change with advance notice, as deemed appropriate by the instructor.</p>
+  </section>
+</body>
+</html>
