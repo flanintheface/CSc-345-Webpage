@@ -1,41 +1,59 @@
-#staff-info {
-    margin-bottom: 5%;
+a {
+    text-decoration: underline;
 }
 
-.staff {
-    margin-bottom: 3%;
-    border: 2px solid black;
-    padding-top: 1em;
-    padding-left: 1em;
+body::after {
+    background-image: url('homie.png');
+    background-size: 20% 30%;
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    opacity: 0.0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;   
+}
+
+#class-header {
+    margin-bottom: 2%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#course-topics > li {
+    margin-bottom: 2em;
 }
 
 .name {
     font-weight: bold;
 }
 
-a {
-    text-decoration: underline;
+section {
+    margin-bottom: 2.5em;
 }
 
 #staff-header {
     text-decoration: bold;
 }
 
-#class-header {
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 2%;
-}
-
-section {
-    margin-bottom: 2.5em;
-}
-
 .topic-slides {
-    text-decoration: none;
     font-weight: bold;
+    text-decoration: none;
 }
 
-#course-topics > li {
-    margin-bottom: 2em;
+.topic-slides:hover {
+    text-decoration: none;
+}
+
+.staff {
+    border: 2px solid black;
+    margin-bottom: 3%;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+#staff-info {
+    margin-bottom: 5%;
 }
