@@ -4,16 +4,17 @@ a {
 
 body::after {
     background-image: url('homie.png');
-    background-size: 20% 30%;
+    background-size: 20%;
     bottom: 0;
     content: "";
     display: block;
+    height: 625%;
     left: 0;
     opacity: 0.0;
     position: absolute;
     right: 0;
     top: 0;
-    z-index: -1;   
+    z-index: -1;
 }
 
 #class-header {
